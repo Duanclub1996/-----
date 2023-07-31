@@ -26,20 +26,6 @@ from torch.utils.data import DataLoader, Dataset
 from sklearn.model_selection import train_test_split
 
 
-# transform_train = transforms.Compose([
-#     transforms.RandomHorizontalFlip(),
-#     transforms.RandomGrayscale(),
-#     transforms.ToTensor(),
-#     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
-# transform_test = transforms.Compose([     
-#     transforms.ToTensor(),
-#     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
-
-# # train_data = datasets.CIFAR10(root=pathlib.Path.cwd(), train=True,transform=transform_train,download=False)
-# # test_data =datasets.CIFAR10(root=pathlib.Path.cwd(),train=False,transform=transform_test,download=False)
-
-
-
 
 class MultiHeadAttention(nn.Module):
    def __init__(self, d_model, num_heads):
@@ -135,6 +121,7 @@ class VIT(nn.Module):
       self.layernorm = nn.LayerNorm(d_model)
       self.fc = nn.Linear(d_model, num_classes)
       self.cls_token = nn.Parameter(torch.randn(1, 1, d_model))
+      
     def forward(self, x):
        x = self.patch_embedding(x)
        b, n, _ = x.shape  # shape (b, n, 768)
