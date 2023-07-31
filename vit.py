@@ -32,7 +32,7 @@ class MultiHeadAttention(nn.Module):
        super(MultiHeadAttention, self).__init__()
        self.d_model = d_model
        self.num_heads = num_heads
-       self.head_dim = d_model // num_heads
+       self.head_dim = d_model // num_heads  # 32
 
        self.WQ = nn.Linear(d_model, d_model)
        self.WK = nn.Linear(d_model, d_model)
@@ -53,16 +53,21 @@ class MultiHeadAttention(nn.Module):
        return output, attention_weights
 
    def split_heads(self, x):
+    #    print(x.shape)
+    #    print(self.head_dim)
+    #    print(self.num_heads)
        batch_size, seq_length, _ = x.size()
        x = x.view(batch_size, seq_length, self.num_heads, self.head_dim)
        return x.transpose(1, 2)
 
    def combine_heads(self, x):
+    #    print(x.shape)
        batch_size, _, seq_length, _ = x.size()
        x = x.transpose(1, 2)
        return x.contiguous().view(batch_size, seq_length, self.d_model)
 
    def forward(self, Q, K, V, mask=None):
+    #    print(Q.shape)
     #    print(Q.shape)
        Q = self.split_heads(self.WQ(Q))
        K = self.split_heads(self.WK(K))
@@ -113,7 +118,7 @@ class VIT(nn.Module):
       self.num_classes = num_classes
       self.patch_embedding = nn.Sequential(
             Rearrange('b c (h p1) (w p2) -> b (h w) (p1 p2 c)', p1 = patch_size, p2 = patch_size),  
-            nn.Linear(d_model, d_model)
+            nn.Linear(192, d_model)
         )
       self.positional_encoding = nn.Parameter(torch.randn(1, 1 + (image_size // patch_size) ** 2, d_model))
       self.dropout = nn.Dropout(dropout)
@@ -136,6 +141,6 @@ class VIT(nn.Module):
        x = self.layernorm(x)
        x = torch.mean(x, dim=1)
        x = self.fc(x)
-       return x
+       return F.softmax(x,dim=-1)
 
 # vit = VIT(num_layers=12, d_model=768, num_heads=12, dff=3072, image_size=224, patch_size=16, num_classes=10)

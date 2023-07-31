@@ -65,8 +65,9 @@ class fit(object):
         if os.path.isdir('args.save_dir'+ f'{local_time}') is True:
             self.log = _logger(args.save_dir + f'{local_time}/log')
         else:
-            os.mkdir(args.save_dir + f'{local_time}')
+            os.makedirs(args.save_dir + f'{local_time}')
             self.log = _logger(args.save_dir + f'{local_time}/log')
+        self.log.debug(self.args)
         self.save_dir = args.save_dir + f'{local_time}/'
         if torch.cuda.is_available():
             self.mode.cuda()
@@ -83,13 +84,13 @@ class fit(object):
         sns.heatmap(conf, annot=True, cmap='Blues',ax=ax[0][0],fmt='d')
         
         sns.lineplot(data=train_iter_loss,ax=ax[0][1])
-        ax[0][1].set_xlabel('迭代次数')
+        ax[0][1].set_xlabel('Epoch')
         ax[0][1].set_ylabel('train_loss')
         ax[0][1].set_xlim(0,train_iter_loss.shape[0])
 
         sns.lineplot(data=val_acc,ax=ax[1][0])
         ax[1][0].set_xlabel('Epoch')
-        ax[1][0].set_ylabel('准确率')
+        ax[1][0].set_ylabel('ACC')
         ax[1][0].set_xlim(0,val_acc.shape[0])
         ax[1][0].set_ylim(0,1)
 
@@ -109,9 +110,9 @@ class fit(object):
             output = self.mode(data)
             loss = self.lossfunc(output,label)
             val_loss.append(loss.item())
-            acc = torch.sum(torch.argmax(output,dim=-1) == torch.argmax(label,dim=-1))/output.shape[0]
-            
-        return np.average(val_loss) , acc.item() 
+            acc = torch.sum(torch.argmax(output,dim=-1) == label)/output.shape[0]
+            val_acc.append(acc.item())
+        return np.average(val_loss) , np.average(val_acc) 
 
     def train(self):
         train_iter_loss = []
@@ -166,14 +167,16 @@ class fit(object):
         for data ,label in self.test_dataloader:
             data = data.to(self.args.device)
             output = self.mode(data)
-            acc_num += torch.sum(torch.argmax(output.cpu().detach(),axis=-1) == torch.argmax(label,dim=-1))
+            acc_num += torch.sum(torch.argmax(output.cpu().detach(),axis=-1) == label)
             all_num += data.shape[0]
+            # print(label.shape)
+            # print(output.shape)
             pred_label.extend(list(np.array(np.argmax(output.cpu().detach(),axis=-1)).reshape(-1)))
-            true_label.extend(list(np.array(torch.argmax(label,dim=-1)).reshape(-1)))
+            true_label.extend(list(np.array(label).reshape(-1)))
         self.log.debug(f'test_acc:{acc_num / all_num}')
 
         conf = metrics.confusion_matrix(pred_label,true_label)
         train_iter_loss = np.load(f'{self.save_dir}' + 'train_iter_loss.npy')
         val_loss = np.load(f'{self.save_dir}' + 'val_loss.npy')
-        val_acc = np.load(f'{self.save_dir}' + 'val_acc.npy')
+        val_acc = np.load( f'{self.save_dir}' + 'val_acc.npy')
         self.vis(conf,train_iter_loss,val_acc,val_loss)
