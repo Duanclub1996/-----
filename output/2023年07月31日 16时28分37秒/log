@@ -1,0 +1,6 @@
+[2023:07:31--16:28:37] DEBUG:Namespace(batch_size=512, d_model=256, device='cuda', dff=256, dropout=0.2, epoch=100, image_size=32, learning_rate=0.001, num_classes=10, num_heads=8, num_layers=8, patch_size=8, save_dir='./output/')
+[2023:07:31--16:28:40] DEBUG:==========Train==========
+[2023:07:31--16:28:55] DEBUG:eopch:1 train_loss: 2.31  val_loss:2.306033957004547  val_acc:0.09998276643455029
+[2023:07:31--16:29:10] DEBUG:eopch:2 train_loss: 2.30  val_loss:2.304182541370392  val_acc:0.09972426481544971
+[2023:07:31--16:29:10] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--16:29:25] DEBUG:eopch:3 train_loss: 2.30  val_loss:2.304236912727356  val_acc:0.10024126842617989

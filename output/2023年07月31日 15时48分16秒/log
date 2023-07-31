@@ -1,0 +1,156 @@
+[2023:07:31--15:48:16] DEBUG:Namespace(batch_size=512, d_model=256, device='cuda', dff=256, dropout=0.2, epoch=100, image_size=32, learning_rate=0.0001, num_classes=10, num_heads=4, num_layers=3, patch_size=8, save_dir='./output/')
+[2023:07:31--15:48:19] DEBUG:==========Train==========
+[2023:07:31--15:48:33] DEBUG:eopch:1 train_loss: 2.27  val_loss:2.228114056587219  val_acc:0.20394071713089942
+[2023:07:31--15:48:47] DEBUG:eopch:2 train_loss: 2.23  val_loss:2.200192725658417  val_acc:0.24310661777853965
+[2023:07:31--15:49:00] DEBUG:eopch:3 train_loss: 2.20  val_loss:2.166495406627655  val_acc:0.2823357075452805
+[2023:07:31--15:49:14] DEBUG:eopch:4 train_loss: 2.18  val_loss:2.1445767164230345  val_acc:0.29923023879528043
+[2023:07:31--15:49:27] DEBUG:eopch:5 train_loss: 2.17  val_loss:2.139199459552765  val_acc:0.3138269767165184
+[2023:07:31--15:49:41] DEBUG:eopch:6 train_loss: 2.16  val_loss:2.1265980005264282  val_acc:0.32143267542123793
+[2023:07:31--15:49:54] DEBUG:eopch:7 train_loss: 2.15  val_loss:2.111401546001434  val_acc:0.34149241745471953
+[2023:07:31--15:50:08] DEBUG:eopch:8 train_loss: 2.14  val_loss:2.096620523929596  val_acc:0.3564453125
+[2023:07:31--15:50:22] DEBUG:eopch:9 train_loss: 2.13  val_loss:2.0898311734199524  val_acc:0.36640050560235976
+[2023:07:31--15:50:35] DEBUG:eopch:10 train_loss: 2.13  val_loss:2.0874869346618654  val_acc:0.3680893838405609
+[2023:07:31--15:50:49] DEBUG:eopch:11 train_loss: 2.12  val_loss:2.076564812660217  val_acc:0.3792796418070793
+[2023:07:31--15:51:02] DEBUG:eopch:12 train_loss: 2.12  val_loss:2.0772735595703127  val_acc:0.3772805601358414
+[2023:07:31--15:51:02] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--15:51:16] DEBUG:eopch:13 train_loss: 2.11  val_loss:2.064589500427246  val_acc:0.3887810200452805
+[2023:07:31--15:51:29] DEBUG:eopch:14 train_loss: 2.11  val_loss:2.0691657066345215  val_acc:0.385546875
+[2023:07:31--15:51:29] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--15:51:43] DEBUG:eopch:15 train_loss: 2.10  val_loss:2.0586328744888305  val_acc:0.39636374115943906
+[2023:07:31--15:51:57] DEBUG:eopch:16 train_loss: 2.10  val_loss:2.056654226779938  val_acc:0.39869600236415864
+[2023:07:31--15:52:10] DEBUG:eopch:17 train_loss: 2.09  val_loss:2.0482771158218385  val_acc:0.4037856161594391
+[2023:07:31--15:52:24] DEBUG:eopch:18 train_loss: 2.09  val_loss:2.0367951571941374  val_acc:0.41875574439764024
+[2023:07:31--15:52:37] DEBUG:eopch:19 train_loss: 2.09  val_loss:2.0385902285575868  val_acc:0.41591796875
+[2023:07:31--15:52:37] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--15:52:51] DEBUG:eopch:20 train_loss: 2.08  val_loss:2.038444000482559  val_acc:0.4172679230570793
+[2023:07:31--15:52:51] DEBUG:EarlyStopping counter: 2 out of 20
+[2023:07:31--15:53:04] DEBUG:eopch:21 train_loss: 2.08  val_loss:2.033377945423126  val_acc:0.42257008254528045
+[2023:07:31--15:53:18] DEBUG:eopch:22 train_loss: 2.08  val_loss:2.0356478333473205  val_acc:0.4217256441712379
+[2023:07:31--15:53:18] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--15:53:31] DEBUG:eopch:23 train_loss: 2.07  val_loss:2.0295187294483186  val_acc:0.4274241730570793
+[2023:07:31--15:53:45] DEBUG:eopch:24 train_loss: 2.07  val_loss:2.0377434968948362  val_acc:0.41821001917123796
+[2023:07:31--15:53:45] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--15:53:58] DEBUG:eopch:25 train_loss: 2.07  val_loss:2.0272460877895355  val_acc:0.42707950323820115
+[2023:07:31--15:53:58] DEBUG:EarlyStopping counter: 2 out of 20
+[2023:07:31--15:54:12] DEBUG:eopch:26 train_loss: 2.07  val_loss:2.02477171421051  val_acc:0.43319163620471957
+[2023:07:31--15:54:26] DEBUG:eopch:27 train_loss: 2.06  val_loss:2.023901104927063  val_acc:0.43409352004528046
+[2023:07:31--15:54:39] DEBUG:eopch:28 train_loss: 2.06  val_loss:2.034533715248108  val_acc:0.4210305601358414
+[2023:07:31--15:54:39] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--15:54:52] DEBUG:eopch:29 train_loss: 2.06  val_loss:2.0173486530780793  val_acc:0.43705767542123797
+[2023:07:31--15:55:06] DEBUG:eopch:30 train_loss: 2.06  val_loss:2.0198306798934937  val_acc:0.4329331338405609
+[2023:07:31--15:55:06] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--15:55:20] DEBUG:eopch:31 train_loss: 2.06  val_loss:2.0120326697826387  val_acc:0.4435546875
+[2023:07:31--15:55:33] DEBUG:eopch:32 train_loss: 2.05  val_loss:2.01260626912117  val_acc:0.4405905336141586
+[2023:07:31--15:55:33] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--15:55:47] DEBUG:eopch:33 train_loss: 2.05  val_loss:2.0048615992069245  val_acc:0.4490579038858414
+[2023:07:31--15:56:00] DEBUG:eopch:34 train_loss: 2.05  val_loss:2.0110750079154966  val_acc:0.4430893838405609
+[2023:07:31--15:56:00] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--15:56:14] DEBUG:eopch:35 train_loss: 2.05  val_loss:2.003128266334534  val_acc:0.45208524763584135
+[2023:07:31--15:56:27] DEBUG:eopch:36 train_loss: 2.05  val_loss:2.00015042424202  val_acc:0.45586511939764024
+[2023:07:31--15:56:41] DEBUG:eopch:37 train_loss: 2.05  val_loss:1.9988337814807893  val_acc:0.4572782635688782
+[2023:07:31--15:56:54] DEBUG:eopch:38 train_loss: 2.04  val_loss:2.0028917253017426  val_acc:0.4514246329665184
+[2023:07:31--15:56:54] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--15:57:08] DEBUG:eopch:39 train_loss: 2.04  val_loss:1.9985375881195069  val_acc:0.45682444870471955
+[2023:07:31--15:57:08] DEBUG:EarlyStopping counter: 2 out of 20
+[2023:07:31--15:57:21] DEBUG:eopch:40 train_loss: 2.04  val_loss:1.9994173645973206  val_acc:0.45576171875
+[2023:07:31--15:57:21] DEBUG:EarlyStopping counter: 3 out of 20
+[2023:07:31--15:57:35] DEBUG:eopch:41 train_loss: 2.04  val_loss:1.9998134911060332  val_acc:0.45579618513584136
+[2023:07:31--15:57:35] DEBUG:EarlyStopping counter: 4 out of 20
+[2023:07:31--15:57:48] DEBUG:eopch:42 train_loss: 2.03  val_loss:2.002117466926575  val_acc:0.45302734375
+[2023:07:31--15:57:48] DEBUG:EarlyStopping counter: 5 out of 20
+[2023:07:31--15:58:02] DEBUG:eopch:43 train_loss: 2.03  val_loss:1.9937408149242402  val_acc:0.46090877801179886
+[2023:07:31--15:58:15] DEBUG:eopch:44 train_loss: 2.03  val_loss:1.9999748766422272  val_acc:0.45575022995471953
+[2023:07:31--15:58:15] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--15:58:29] DEBUG:eopch:45 train_loss: 2.03  val_loss:1.9854105472564698  val_acc:0.4723288148641586
+[2023:07:31--15:58:42] DEBUG:eopch:46 train_loss: 2.03  val_loss:1.987046593427658  val_acc:0.4680204510688782
+[2023:07:31--15:58:42] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--15:58:56] DEBUG:eopch:47 train_loss: 2.03  val_loss:1.9874448418617248  val_acc:0.46930147111415865
+[2023:07:31--15:58:56] DEBUG:EarlyStopping counter: 2 out of 20
+[2023:07:31--15:59:10] DEBUG:eopch:48 train_loss: 2.02  val_loss:1.9915718257427215  val_acc:0.4640625
+[2023:07:31--15:59:10] DEBUG:EarlyStopping counter: 3 out of 20
+[2023:07:31--15:59:23] DEBUG:eopch:49 train_loss: 2.02  val_loss:1.9809167683124542  val_acc:0.4760512411594391
+[2023:07:31--15:59:37] DEBUG:eopch:50 train_loss: 2.02  val_loss:1.9908721983432769  val_acc:0.4646254599094391
+[2023:07:31--15:59:37] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--15:59:50] DEBUG:eopch:51 train_loss: 2.02  val_loss:1.9832218825817107  val_acc:0.47434512823820113
+[2023:07:31--15:59:50] DEBUG:EarlyStopping counter: 2 out of 20
+[2023:07:31--16:00:04] DEBUG:eopch:52 train_loss: 2.02  val_loss:1.9812209904193878  val_acc:0.47522403448820116
+[2023:07:31--16:00:04] DEBUG:EarlyStopping counter: 3 out of 20
+[2023:07:31--16:00:18] DEBUG:eopch:53 train_loss: 2.02  val_loss:1.979957354068756  val_acc:0.4761891081929207
+[2023:07:31--16:00:31] DEBUG:eopch:54 train_loss: 2.02  val_loss:1.9784149646759033  val_acc:0.4764935657382011
+[2023:07:31--16:00:45] DEBUG:eopch:55 train_loss: 2.01  val_loss:1.9821215748786927  val_acc:0.4729319855570793
+[2023:07:31--16:00:45] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--16:00:58] DEBUG:eopch:56 train_loss: 2.01  val_loss:1.9842821180820465  val_acc:0.4733570769429207
+[2023:07:31--16:00:58] DEBUG:EarlyStopping counter: 2 out of 20
+[2023:07:31--16:01:12] DEBUG:eopch:57 train_loss: 2.01  val_loss:1.9787672579288482  val_acc:0.4764073982834816
+[2023:07:31--16:01:12] DEBUG:EarlyStopping counter: 3 out of 20
+[2023:07:31--16:01:25] DEBUG:eopch:58 train_loss: 2.01  val_loss:1.9752111434936523  val_acc:0.4807444855570793
+[2023:07:31--16:01:39] DEBUG:eopch:59 train_loss: 2.01  val_loss:1.9782301545143128  val_acc:0.4786937043070793
+[2023:07:31--16:01:39] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--16:01:52] DEBUG:eopch:60 train_loss: 2.01  val_loss:1.9790811657905578  val_acc:0.47743566185235975
+[2023:07:31--16:01:52] DEBUG:EarlyStopping counter: 2 out of 20
+[2023:07:31--16:02:06] DEBUG:eopch:61 train_loss: 2.01  val_loss:1.9722430765628816  val_acc:0.48264590948820113
+[2023:07:31--16:02:19] DEBUG:eopch:62 train_loss: 2.01  val_loss:1.97597678899765  val_acc:0.47786075323820115
+[2023:07:31--16:02:19] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--16:02:33] DEBUG:eopch:63 train_loss: 2.01  val_loss:1.972061002254486  val_acc:0.48633386939764023
+[2023:07:31--16:02:46] DEBUG:eopch:64 train_loss: 2.01  val_loss:1.967524766921997  val_acc:0.4884593293070793
+[2023:07:31--16:03:00] DEBUG:eopch:65 train_loss: 2.01  val_loss:1.9710713326931  val_acc:0.4849551931023598
+[2023:07:31--16:03:00] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--16:03:13] DEBUG:eopch:66 train_loss: 2.00  val_loss:1.9705579698085784  val_acc:0.4857938885688782
+[2023:07:31--16:03:13] DEBUG:EarlyStopping counter: 2 out of 20
+[2023:07:31--16:03:27] DEBUG:eopch:67 train_loss: 2.01  val_loss:1.969951766729355  val_acc:0.48725298792123795
+[2023:07:31--16:03:27] DEBUG:EarlyStopping counter: 3 out of 20
+[2023:07:31--16:03:40] DEBUG:eopch:68 train_loss: 2.00  val_loss:1.975212675333023  val_acc:0.48183019310235975
+[2023:07:31--16:03:40] DEBUG:EarlyStopping counter: 4 out of 20
+[2023:07:31--16:03:54] DEBUG:eopch:69 train_loss: 2.00  val_loss:1.9651189923286438  val_acc:0.49267578125
+[2023:07:31--16:04:07] DEBUG:eopch:70 train_loss: 2.00  val_loss:1.9626976311206819  val_acc:0.4946978405117989
+[2023:07:31--16:04:21] DEBUG:eopch:71 train_loss: 2.00  val_loss:1.966180717945099  val_acc:0.4916302844882011
+[2023:07:31--16:04:21] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--16:04:35] DEBUG:eopch:72 train_loss: 2.00  val_loss:1.9670528769493103  val_acc:0.4885569855570793
+[2023:07:31--16:04:35] DEBUG:EarlyStopping counter: 2 out of 20
+[2023:07:31--16:04:48] DEBUG:eopch:73 train_loss: 2.00  val_loss:1.964342474937439  val_acc:0.4933191642165184
+[2023:07:31--16:04:48] DEBUG:EarlyStopping counter: 3 out of 20
+[2023:07:31--16:05:01] DEBUG:eopch:74 train_loss: 2.00  val_loss:1.9626988410949706  val_acc:0.49373276680707934
+[2023:07:31--16:05:01] DEBUG:EarlyStopping counter: 4 out of 20
+[2023:07:31--16:05:15] DEBUG:eopch:75 train_loss: 2.00  val_loss:1.9634282410144805  val_acc:0.4950999543070793
+[2023:07:31--16:05:28] DEBUG:eopch:76 train_loss: 2.00  val_loss:1.9605992257595062  val_acc:0.49672564417123793
+[2023:07:31--16:05:42] DEBUG:eopch:77 train_loss: 1.99  val_loss:1.9520344316959382  val_acc:0.5047334566712379
+[2023:07:31--16:05:55] DEBUG:eopch:78 train_loss: 1.99  val_loss:1.960600584745407  val_acc:0.4969611674547195
+[2023:07:31--16:05:55] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--16:06:09] DEBUG:eopch:79 train_loss: 1.99  val_loss:1.957457309961319  val_acc:0.5007927387952804
+[2023:07:31--16:06:09] DEBUG:EarlyStopping counter: 2 out of 20
+[2023:07:31--16:06:23] DEBUG:eopch:80 train_loss: 1.99  val_loss:1.9546959340572356  val_acc:0.501683133840561
+[2023:07:31--16:06:23] DEBUG:EarlyStopping counter: 3 out of 20
+[2023:07:31--16:06:36] DEBUG:eopch:81 train_loss: 1.99  val_loss:1.954232794046402  val_acc:0.505078125
+[2023:07:31--16:06:50] DEBUG:eopch:82 train_loss: 1.99  val_loss:1.9570636034011841  val_acc:0.5026482075452805
+[2023:07:31--16:06:50] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--16:07:04] DEBUG:eopch:83 train_loss: 1.99  val_loss:1.9544840455055237  val_acc:0.5019129142165184
+[2023:07:31--16:07:04] DEBUG:EarlyStopping counter: 2 out of 20
+[2023:07:31--16:07:17] DEBUG:eopch:84 train_loss: 1.99  val_loss:1.9524216532707215  val_acc:0.5049919575452805
+[2023:07:31--16:07:17] DEBUG:EarlyStopping counter: 3 out of 20
+[2023:07:31--16:07:31] DEBUG:eopch:85 train_loss: 1.99  val_loss:1.9492867588996887  val_acc:0.5066348806023597
+[2023:07:31--16:07:44] DEBUG:eopch:86 train_loss: 1.99  val_loss:1.9526861369609834  val_acc:0.503952206671238
+[2023:07:31--16:07:44] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--16:07:58] DEBUG:eopch:87 train_loss: 1.98  val_loss:1.9489526510238648  val_acc:0.5078010112047195
+[2023:07:31--16:08:11] DEBUG:eopch:88 train_loss: 1.98  val_loss:1.9552142024040222  val_acc:0.50283203125
+[2023:07:31--16:08:11] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--16:08:25] DEBUG:eopch:89 train_loss: 1.98  val_loss:1.9524674773216248  val_acc:0.5048540905117989
+[2023:07:31--16:08:25] DEBUG:EarlyStopping counter: 2 out of 20
+[2023:07:31--16:08:38] DEBUG:eopch:90 train_loss: 1.98  val_loss:1.9477940678596497  val_acc:0.5093979775905609
+[2023:07:31--16:08:52] DEBUG:eopch:91 train_loss: 1.98  val_loss:1.9482552587985993  val_acc:0.508444394171238
+[2023:07:31--16:08:52] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--16:09:05] DEBUG:eopch:92 train_loss: 1.98  val_loss:1.948397308588028  val_acc:0.5079159006476403
+[2023:07:31--16:09:05] DEBUG:EarlyStopping counter: 2 out of 20
+[2023:07:31--16:09:19] DEBUG:eopch:93 train_loss: 1.98  val_loss:1.9518288731575013  val_acc:0.5054457724094391
+[2023:07:31--16:09:19] DEBUG:EarlyStopping counter: 3 out of 20
+[2023:07:31--16:09:33] DEBUG:eopch:94 train_loss: 1.98  val_loss:1.9535021126270293  val_acc:0.5024011954665184
+[2023:07:31--16:09:33] DEBUG:EarlyStopping counter: 4 out of 20
+[2023:07:31--16:09:46] DEBUG:eopch:95 train_loss: 1.98  val_loss:1.9492246448993682  val_acc:0.5095932900905609
+[2023:07:31--16:10:00] DEBUG:eopch:96 train_loss: 1.98  val_loss:1.9504806399345398  val_acc:0.505417050421238
+[2023:07:31--16:10:00] DEBUG:EarlyStopping counter: 1 out of 20
+[2023:07:31--16:10:13] DEBUG:eopch:97 train_loss: 1.98  val_loss:1.9458817005157472  val_acc:0.5086971506476402
+[2023:07:31--16:10:13] DEBUG:EarlyStopping counter: 2 out of 20
+[2023:07:31--16:10:27] DEBUG:eopch:98 train_loss: 1.98  val_loss:1.9490658819675446  val_acc:0.505905331671238
+[2023:07:31--16:10:27] DEBUG:EarlyStopping counter: 3 out of 20
+[2023:07:31--16:10:40] DEBUG:eopch:99 train_loss: 1.98  val_loss:1.9480275750160216  val_acc:0.5103285849094391
+[2023:07:31--16:10:54] DEBUG:eopch:100 train_loss: 1.98  val_loss:1.940713530778885  val_acc:0.5164177387952804
+[2023:07:31--16:10:55] DEBUG:test_acc:0.5169000029563904

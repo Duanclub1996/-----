@@ -1,0 +1,9 @@
+[2023:07:31--12:29:09] DEBUG:==========Train==========
+[2023:07:31--12:29:27] DEBUG:eopch:1 train_loss: 2.25  val_loss:2.2393241411522973  val_acc:0.0
+[2023:07:31--12:29:45] DEBUG:eopch:2 train_loss: 2.20  val_loss:2.162380683271191  val_acc:0.0
+[2023:07:31--12:30:03] DEBUG:eopch:3 train_loss: 2.18  val_loss:2.132394380207303  val_acc:0.0
+[2023:07:31--12:30:21] DEBUG:eopch:4 train_loss: 2.16  val_loss:2.12487760073022  val_acc:0.0
+[2023:07:31--12:30:39] DEBUG:eopch:5 train_loss: 2.14  val_loss:2.0894072599048856  val_acc:0.0
+[2023:07:31--12:30:57] DEBUG:eopch:6 train_loss: 2.13  val_loss:2.092570831504049  val_acc:0.0
+[2023:07:31--12:31:14] DEBUG:eopch:7 train_loss: 2.12  val_loss:2.072224381603772  val_acc:0.0
+[2023:07:31--12:31:32] DEBUG:eopch:8 train_loss: 2.11  val_loss:2.059606220148787  val_acc:0.0

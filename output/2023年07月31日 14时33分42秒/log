@@ -1,0 +1,2 @@
+[2023:07:31--14:33:42] DEBUG:Namespace(batch_size=512, d_model=256, device='cuda', dff=256, dropout=0.2, epoch=100, image_size=32, learning_rate=0.0001, num_classes=10, num_heads=8, num_layers=8, patch_size=8, save_dir='./output/')
+[2023:07:31--14:33:45] DEBUG:==========Train==========
